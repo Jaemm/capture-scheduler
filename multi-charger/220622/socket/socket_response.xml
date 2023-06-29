@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="cin-test"> 
+<ty>4</ty> 
+<ri>ri_cin-36bfb1485d3b4f118df57d5e79bbf610</ri> 
+<pi>ri_cnt-10c9adab640842378844c70af566e502</pi> 
+<ct>20150715T190934</ct> 
+<lt>20150715T190934</lt> 
+<et>99991231T000000</et> 
+<st>1</st> 
+<cr>/MN_CSE-D-536c4b1c2c-0079</cr> 
+<cnf>application/json</cnf> 
+<cs>10</cs>
+<con><JSON format OCPP 1.6 DATA></con> 
+</m2m:cin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> 
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols"> 
+<cnf>application/json</cnf> 
+<con><JSON format OCPP 1.6 DATA></con> 
+</m2m:cin>
