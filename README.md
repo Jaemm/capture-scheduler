@@ -16,7 +16,7 @@ from datetime import datetime
 
 import tkinter as tk
 
-from tkinter import filedialog, messagebox  # messagebox 추가
+from tkinter import filedialog, messagebox
 
 from selenium import webdriver
 
