@@ -94,7 +94,21 @@ def capture_at_time_thread():
         update_current_time()
         time.sleep(1)
 
-    # 캡처 실행
+    # # 캡처 실행/장시간 대기후 동작시 멈춤현상으로 스레드 분리(24.05.02)
+    # capture_result = take_screenshot()
+    # if capture_result:  # 캡처가 성공했을 경우에만 기록에 추가
+    #     capture_records.append(capture_result)
+    #     update_capture_record_list()
+
+    # reservation_times.remove(f"{selected_hour:02d}:{selected_minute:02d}")
+    # update_reservation_list()
+    
+    # 예약된 시간에 캡처 동작을 별도의 스레드에서 실행
+    threading.Thread(target=capture_screenshot_thread, args=(selected_hour, selected_minute)).start()
+
+# 예약된 시간 캡쳐 별도 스레드
+def capture_screenshot_thread(selected_hour, selected_minute):
+    global custom_path, capture_records, reservation_times
     capture_result = take_screenshot()
     if capture_result:  # 캡처가 성공했을 경우에만 기록에 추가
         capture_records.append(capture_result)
@@ -102,7 +116,6 @@ def capture_at_time_thread():
 
     reservation_times.remove(f"{selected_hour:02d}:{selected_minute:02d}")
     update_reservation_list()
-
 
 def update_reservation_list():
     global reservation_times
