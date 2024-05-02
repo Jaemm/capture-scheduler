@@ -9,15 +9,25 @@
 사용된 라이브러리는 아래와 같습니다
 
 import os
+
 import time
+
 from datetime import datetime
+
 import tkinter as tk
+
 from tkinter import filedialog, messagebox  # messagebox 추가
+
 from selenium import webdriver
+
 from selenium.webdriver.common.keys import Keys
+
 from selenium.webdriver.common.by import By
+
 from selenium.webdriver.support.ui import WebDriverWait
+
 from selenium.webdriver.support import expected_conditions as EC
+
 import threading
 
 프로그램 UI는 사진을 참조 바랍니다.
