@@ -43,3 +43,6 @@ import threading
 
 소스코드를 사용하실분은 해당 박스 부분 코드를 입맛에 맞게 변경하시면 됩니다.
 ![image](https://github.com/Jaemm/capture-scheduler/assets/94304285/cc39d023-7606-46a6-8f3c-08032f4418b0)
+
+실행프로그램은
+dist폴더에 sel_test파일 실행시키면 동작됩니다.
